@@ -1,0 +1,40 @@
+###################################################################
+###################  DebyeByPy readme!  ###########################
+
+Last update: 4/3/2015
+
+Use policy: 
+This code is open source and available for use by anyone. When publishing please
+use the following citation:
+Trigg, E.B. DebyeByPy (2015), GitHub repository, https://github.com/etrigg/DebyeByPy
+
+####################################################################
+
+Welcome to DebyeByPy, the Python code that calculates X-ray scattering of an 
+assembly of atoms using the pairwise Debye function. We designed this code to be
+simple to use. It was written for Python 2.7 and depends on the numpy library. 
+To run it, you need to have Python 2.7 and Numpy installed on your computer 
+(these are available for free online).
+
+This code reads in an XYZ file. An XYZ file is a tab-delimited file that
+specifies the position of each atom in your assembly of atoms. For more
+information visit http://en.wikipedia.org/wiki/XYZ_file_format. An important
+note is that the XYZ file should NOT have any comments in it. 
+
+The Debye function uses Cromer Mann atomic scattering factors which are defined 
+in the accompanying file, cromer_mann.tab. The atomic scattering factor 
+depends on the oxidation state of the atom. Specify which oxidation state you'd
+like to use for each atom in the debyeByPyWrapper.py file. 
+
+To use DebyeByPy, you'll need to open up the wrapper script, debyeByPyWrapper.py.
+Open it in any text editor (Notepad is fine). Here, you can define all the 
+settings, which are explained in the comments of the file. When the settings are
+to your liking, save the file and run it! Make sure that the following files are
+all in the same directory:
+- debyeByPy.py
+- debyeByPyWrapper.py
+- cromer_mann.tab
+- your input XYZ file
+
+This code was written by Edward B. Trigg. Please address any questions to:
+edward.trigg@gmail.com
